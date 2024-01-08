@@ -7,17 +7,17 @@ export default function Home() {
     <>
       <Header />
       <main className="grid w-full gap-10 pt-8 place-items-center lg:pt-24">
-        <div className="flex flex-col justify-between w-11/12 gap-10 lg:flex-row md:gap-16 max-w-[1160px]">
-          <div className="flex flex-col w-full gap-4">
+        <div className="flex flex-col justify-between w-11/12 gap-10 lg:flex-row md:gap-16 max-w-[1160px] lg:gap-0">
+          <div className="flex flex-col w-full gap-4 lg:gap-12">
             <div className="flex gap-2 flex-col text-[#313E51] text-[40px] md:text-[64px] leading-none font-light dark:text-white">
               <h2>Welcome to the</h2>
               <h1 className="font-medium">Frontend Quiz!</h1>
             </div>
-            <h3 className="text-[#626C7F] italic text-[14px] md:text-[20px] leading-normal">
+            <h3 className="text-[#626C7F] italic text-[14px] md:text-[20px] leading-normal dark:text-[#ABC1E1]">
               Pick a subject to get started.
             </h3>
           </div>
-          <div className="flex flex-col w-full gap-3 md:gap-6">
+          <div className="flex flex-col w-full gap-3 md:gap-6 lg:max-w-[564px]">
             <Link
               href={"/quiz/html"}
               className="flex gap-8 p-3 rounded-[12px] md:rounded-[24px] bg-white items-center dark:bg-[#3B4D66] lg:p-5 "

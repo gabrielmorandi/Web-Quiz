@@ -5,14 +5,8 @@ import Image from "next/image"
 import { useTheme } from "next-themes"
 
 export default function SwithTheme() {
-  const { storageKey, theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const [isThemeLoaded, setIsThemeLoaded] = useState(false)
-
-  useEffect(() => {
-    if (storageKey) {
-      setTheme(storageKey)
-    }
-  }, [storageKey, setTheme])
 
   useEffect(() => {
     if (theme) {
